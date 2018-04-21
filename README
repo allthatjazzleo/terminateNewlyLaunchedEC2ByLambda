@@ -1,0 +1,5 @@
+This is the python script to run on AWS lambda and execute based on schedule at every 15 minutes.
+The runtime of python script is on python 2.7
+The purpose of this script is to terminate newly launched instances(avoid unauthorized launch) in your aws region where AWS lambda is used.
+
+The function will lookup RunInstances event and get the relevant instanceId to terminate without affecting the existing running instances. 
